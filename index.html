@@ -28,8 +28,55 @@
 
              <fieldset>
                 <legend>Order Details</legend>
-                <label for="flavor">Choose your flavor</label>
+                <label for="select-flavor">Choose your flavor</label>
+                <select id="flavor" name="flavor">
+                    <option value="none">Select a Flavor</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="chocolate">chocolate</option>
+                    <option value="cookie-dough">cookie dough</option>
+                </select>
+
+
+                <label for="cone">Choose your cone</label>
+                <label for="waffle-cone">
+                    <input type="radio" id="waffle-cone" name="cone" value="waffle-cone" checked>
+                    Waffle Cone
+                </label>
+                  <label for="sugar-cone">
+                    <input type="radio" id="sugar-cone" name="cone" value="sugar-cone">
+                    Sugar Cone
+                </label>
+                  <label for="cup">
+                    <input type="radio" id="cup" name="cone" value="cup">
+                    cup
+                </label>
+
+                <label for="toppings">Toppings</label>
+                <label for="sprinkles">
+                    <input type="checkbox" id="sprinkles" name="toppings[]" value="sprinkles">
+                    Sprinkles
+                </label>
+                <label for="nuts">
+                    <input type="checkbox" id="nuts" name="toppings[]" value="nuts">
+                    Nuts
+                </label>
+                <label for="cherry">
+                    <input type="checkbox" id="cherry" name="toppings[]" value="cherry">
+                    Cherry
+                </label>
+                 <label for="whipped-cream">
+                    <input type="checkbox" id="whipped-cream" name="toppings[]" value="whipped-cream">
+                    Whipped Cream
+                </label>
+
+                <label for="comment">Additional Comments</label>
+                <textarea rows="5" id="comment" name="comment"></textarea>
+               
+
              </fieldset>
+              <button type="submit" id="order-btn">Submit Order</button>
+
         </form>
     </div>
     
