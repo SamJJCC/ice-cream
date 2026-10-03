@@ -28,17 +28,18 @@
 
              <fieldset>
                 <legend>Order Details</legend>
-                <label for="select-flavor">Choose your flavor</label>
+                <label for="select-flavor">Choose your flavor:</label>
                 <select id="flavor" name="flavor">
-                    <option value="none">Select a Flavor</option>
+                    <option value="none">Select a Flavor:</option>
                     <option value="vanilla">Vanilla</option>
                     <option value="strawberry">Strawberry</option>
                     <option value="chocolate">chocolate</option>
                     <option value="cookie-dough">cookie dough</option>
                 </select>
 
-
-                <label for="cone">Choose your cone</label>
+                <!-- cone options -->
+                <label for="cone">Choose your cone:</label>
+                <div id="cone-options">
                 <label for="waffle-cone">
                     <input type="radio" id="waffle-cone" name="cone" value="waffle-cone" checked>
                     Waffle Cone
@@ -51,8 +52,11 @@
                     <input type="radio" id="cup" name="cone" value="cup">
                     cup
                 </label>
-
-                <label for="toppings">Toppings</label>
+                </div>
+                <!-- toppings -->
+               
+                <label for="toppings">Toppings:</label>
+                 <div id="topping-options">
                 <label for="sprinkles">
                     <input type="checkbox" id="sprinkles" name="toppings[]" value="sprinkles">
                     Sprinkles
@@ -69,8 +73,9 @@
                     <input type="checkbox" id="whipped-cream" name="toppings[]" value="whipped-cream">
                     Whipped Cream
                 </label>
+                </div>
 
-                <label for="comment">Additional Comments</label>
+                <label for="comment">Additional Comments:</label>
                 <textarea rows="5" id="comment" name="comment"></textarea>
                
 
