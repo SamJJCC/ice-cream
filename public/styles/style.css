@@ -82,3 +82,9 @@ textarea{
  #topping-options{
     display: flex;
  }
+
+
+.err{
+    color:darkred;
+    display:none;
+}

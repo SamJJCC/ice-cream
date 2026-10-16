@@ -7,7 +7,7 @@
     <!-- favicon -->
      <link rel="icon" href="images\ice-cream fav.webp">
      <link rel="Stylesheet" href="styles\style.css">
-
+    <script src="js/ice-cream.js" defer></script>
 </head>
 <body>
     <div id="main">
@@ -15,19 +15,25 @@
         <div id="header">
             <h1>Ice Cream Order Form</h1>
         </div>
-        <form id="personal-info-form" action="#" methods="get">
+        <form id="personal-info-form" action="#" method="get">
             <!-- personal info -->
              <fieldset>
+                
                 <legend>Personal Information</legend>
+                 <span class="err" id="err-name">Name is Required</span>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
+                <span class="err" id="err-email">Email is Required</span>
                <label for="email">Email:</label>
                <input type="email" id="email" name="email">
+            
+               
 
              </fieldset>
 
              <fieldset>
                 <legend>Order Details</legend>
+                <span class="err" id="err-flavor">Choose a Flavor</span>
                 <label for="select-flavor">Choose your flavor:</label>
                 <select id="flavor" name="flavor">
                     <option value="none">Select a Flavor:</option>
@@ -39,9 +45,10 @@
 
                 <!-- cone options -->
                 <label for="cone">Choose your cone:</label>
+                <span class="err" id="err-method">Select a cone</span>
                 <div id="cone-options">
                 <label for="waffle-cone">
-                    <input type="radio" id="waffle-cone" name="cone" value="waffle-cone" checked>
+                    <input type="radio" id="waffle-cone" name="cone" value="waffle-cone" >
                     Waffle Cone
                 </label>
                   <label for="sugar-cone">
@@ -56,6 +63,7 @@
                 <!-- toppings -->
                
                 <label for="toppings">Toppings:</label>
+                <span class="err" id="err-toppings">Choose a Topping</span>
                  <div id="topping-options">
                 <label for="sprinkles">
                     <input type="checkbox" id="sprinkles" name="toppings[]" value="sprinkles">
