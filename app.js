@@ -3,7 +3,7 @@ import express from 'express';
 // create an instance of an express app
 const app=express();
 // define port number
-const PORT=3000;
+const PORT=3001;
 
 app.use(express.static('public'));
 app.get('/',(req,res)=>{
