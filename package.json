@@ -19,6 +19,7 @@
   "homepage": "https://github.com/SamJJCC/ice-cream#readme",
   "description": "",
   "dependencies": {
+    "ejs": "^7.0.2",
     "express": "^5.2.1"
   }
 }
