@@ -7,5 +7,17 @@
 </head>
 <body>
     <h1>Confirmation page</h1>
+    <!-- displays order object -->
+    <h1>Thank you for your order, <%= order.name%>!</h1>
+    <h2>Order Summary </h2>
+    <p>Name: <%= order.name%> </p>
+    <p>Email: <%= order.email%></p>
+    <p>Flavor: <%= order.flavor%> </p>
+    <p>Cone: <%= order.cone%> </p>
+    <p>Toppings: <%= order.toppings%></p>
+    <p>Comment: <%= order.comment%></p>
+    <p>Date and Time: <%= order.timestamp.toLocaleString()%></p>
+
+
 </body>
 </html>
