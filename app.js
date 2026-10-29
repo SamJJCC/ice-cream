@@ -15,6 +15,10 @@ app.get('/',(req,res)=>{
     res.render('home')
 })
 
+app.get('/admin', (req, res) => {
+    res.render('admin', {orders} );
+});
+
 app.post('/submit-order',(req,res)=>{
     // create a json object to store order data
     const order=req.body;
